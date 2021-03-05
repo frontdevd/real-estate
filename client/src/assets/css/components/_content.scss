@@ -1,0 +1,130 @@
+.content-wrapper {
+  width: calc(100% - 200px);
+  display: block;
+  height: 100%;
+  position: relative;
+  margin-left: 200px;
+  padding: 30px 60px;
+  box-sizing: border-box;
+
+  @include lg {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 15px;
+    margin: 30px 0 0;
+  }
+
+  h1 {
+    font-family: "NunitoSans-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+
+    @include lg {
+      display: none;
+    }
+  }
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include lg {
+    flex-direction: column-reverse;
+  }
+
+  .box {
+    flex-basis: 36%;
+    padding: 0 151px 0 0;
+    box-sizing: border-box;
+    min-height: 400px;
+
+    @include rwd(1400) {
+      flex-basis: 48%;
+      padding: 0 0px 0 0;
+      min-height: unset;
+    }
+
+
+    h3 {
+      width: 221px;
+    }
+
+    p {
+      span {
+        font-family: "NunitoSans-Regular";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #1A1A1A;
+      }
+
+      .cur {
+        font-family: "NunitoSans-Regular";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        position: absolute;
+        margin: 0 4px;
+      }
+    }
+
+    button {
+      outline: none;
+      border: 0;
+      margin-right: 10px;
+      padding: 13px 44px;
+
+      &.yellow {
+        background: $yellow;
+      }
+
+      &.outline {
+        border: 2px solid #000000;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.gallery-wrapper {
+  width: 900px;
+  min-height: 670px;
+
+  @include rwd(1400) {
+    width: 50%;
+    min-height: unset;
+  }
+
+  @include lg {
+    width: 100%;
+  }
+
+  h3 {
+    font-family: "NunitoSans-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #1A1A1A;
+    width: 195px;
+  }
+
+  p {
+    font-family: "NunitoSans-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #414141;
+  }
+}
+

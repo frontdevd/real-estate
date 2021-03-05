@@ -1,0 +1,11 @@
+@mixin btn-arrow {
+  background: 0;
+  border: 0;
+  outline: none;
+  position: relative;
+  background: #FFFFFF;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

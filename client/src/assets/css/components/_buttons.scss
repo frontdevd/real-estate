@@ -1,0 +1,36 @@
+.carousel__back-button {
+ @include btn-arrow();
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: #E7E7E7;
+    bottom: 0;
+    width: 90px;
+    left: 29%;
+  }
+
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.carousel__next-button {
+  @include btn-arrow();
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: #E7E7E7;
+    top: 0;
+    width: 90px;
+    left: 29%;
+  }
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
